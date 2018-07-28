@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeaderGeneric = (props) => (
     <header id="header">
-        <h1>Generic</h1>
-        <p>Ipsum dolor sit amet nullam</p>
+        <h1>Project Experience</h1>
+        <p>Personal and Team Projects</p>
     </header>
 )
 

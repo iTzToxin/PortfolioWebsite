@@ -7,6 +7,9 @@ import Waypoint from 'react-waypoint'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import pic01 from '../assets/images/pic01.jpg'
+import ue4Icon from '../assets/images/UE4Icon.png'
+import cIcon from '../assets/images/C++Icon.png'
+
 
 class Index extends React.Component {
   constructor(props) {
@@ -40,18 +43,16 @@ class Index extends React.Component {
         <Nav sticky={this.state.stickyNav} />
 
         <div id="main">
-
+               
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>General Information</h2> 
                 </header>
-                <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-                adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-                Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+                <p> TODO: Figure out what to say</p>
                 <ul className="actions">
-                  <li><Link to="/generic" className="button">Learn More</Link></li>
+                  <li><Link to="/generic" className="button">Project Experience</Link></li>
                 </ul>
               </div>
               <span className="image"><img src={pic01} alt="" /></span>
@@ -60,24 +61,24 @@ class Index extends React.Component {
 
           <section id="first" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Programming Focus</h2>
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                <span className="image"><img src={cIcon} alt=""  height="150" width="150" /></span>
+                <h3>C++</h3>
+                <p>Proficient with C/C++. Knowledgeable with STL</p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+              <span className="image"><img src={ue4Icon} alt="" height="150" width="150" /></span>
+                <h3>Unreal Engine 4</h3>
+                <p>Skilled with programming, blueprinting, and behavior trees in the Unreal Engine</p>
               </li>
-              <li>
+              {/* <li>
                 <span className="icon major style5 fa-diamond"></span>
                 <h3>Dolor nullam</h3>
                 <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-              </li>
+              </li> */}
             </ul>
             <footer className="major">
               <ul className="actions">
@@ -122,7 +123,7 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="cta" className="main special">
+          {/* <section id="cta" className="main special">
             <header className="major">
               <h2>Congue imperdiet</h2>
               <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
@@ -134,7 +135,7 @@ class Index extends React.Component {
                 <li><Link to="/generic" className="button">Learn More</Link></li>
               </ul>
             </footer>
-          </section>
+          </section> */}
 
         </div>
 

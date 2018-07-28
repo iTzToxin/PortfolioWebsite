@@ -4,10 +4,13 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import HeaderGeneric from '../components/HeaderGeneric'
-import pic04 from '../assets/images/pic04.jpg'
+import pic from '../assets/images/TGPscreenshot.png'
+import pic2 from '../assets/images/Code.jpg'
 
-class Generic extends React.Component {
-  render() {
+class Generic extends React.Component 
+{
+  render() 
+  {
 
     return (
       <div>
@@ -16,15 +19,26 @@ class Generic extends React.Component {
         <HeaderGeneric />
         <div id="main">
           <section id="content" className="main">
-            <span className="image main"><img src={pic04} alt="" /></span>
-            <h2>Magna feugiat lorem</h2>
-            <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-            <p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-            <h2>Tempus veroeros</h2>
-            <p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
-          </section>
+            <span className="image main"><img src={pic} alt="" /></span>
+            <h1>The Gauntlet Prismatic</h1>
+            <h2>Unreal Engine 4,  April 2017 - June 2018</h2>
+            <h2>Lead Gameplay Programmer</h2>
+            <p> TGP was a project developed in the Unreal Engine by a team of 17 people. As lead gameplay programmer I worked mainly on player functionality,
+               including fundamental mechanics such as the fast paced movement as well as the combat abilities. I implemented systems that allowed gameplay designers
+                to rapidly test and modify aspects of the players abilities. All of the gameplay systems were built in C++ and exposed to the Unreal editor for designers to be able to use them in Blueprinting.</p>
+          </section> 
         </div>
 
+        <div id="main">
+          <section id="content" className="main">
+            <span className="image main"><img src={pic2} alt="" /></span>
+            <h1>Personal C++ Engine</h1>
+            <h2>January 2017 - Current</h2> 
+            <p> This engine was originally created as a part of some of my classes in college, however I've continued development on my own as a means to practice and build integral 
+              systems used in the games industry. Over time I have built a wide variety of different 
+              systems including: Entity Component System, Script binding, Reflection, Networking, Animation, AI.</p>
+          </section>
+        </div>
       </div>
     )
   }
